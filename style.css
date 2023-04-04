@@ -11,8 +11,14 @@ body{
 
 .conteiner-main{
     display: flex;
-    justify-content: center;
-    
+    width: 40%;
+    background-color: white;
+    max-width: 90%;
+    width: 37.5rem;
+    margin: 0 auto;
+    margin-top: 11rem;
+    margin-bottom: 10%;
+    border-radius: 15px;
 
 }
 .img-perfume {
@@ -20,30 +26,24 @@ body{
     background-image: url(./images/image-product-desktop.jpg);
     background-position: center;
     background-size: cover;
-    width: 20%;
+    width: 190%;
     border-radius: 15px 0 0 15px;
     background-repeat: no-repeat;
 }
+
 .conteiner-content{
-    height: 450px;
-    width:20%;
-    background-color: white;
-    padding: 2.5% 2.5% 0% 2.5%;
     display: flex;
     flex-direction: column;
-    border-radius: 0px 10px 10px 0px;
-    
+    padding: 6%;
+ 
+
 }
 
-.conteiner-info{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-}
 
 .conteiner-price{
     display: flex;
     flex-direction: column;
-    padding-bottom: 3rem;
+
 }
 
 .conteiner-price p{
@@ -52,7 +52,7 @@ body{
     flex-direction: row;
     gap: 1.6rem;
     font-size: 2rem;
-    padding-bottom: 3rem;
+
 }
 
 .conteiner-price p span{
@@ -79,9 +79,14 @@ button{
 p{  
     font-family: "Montserrat";
     color: hsl(228, 12%, 48%);
+    padding-bottom: 1.5rem;
+    
 }
 h1{
-    padding-top: 1rem;
+    font-family: "Frauces";
+    padding-top: 1.5
+    rem;
+    padding-bottom: 1.5rem;
     color: hsl(212, 21%, 14%);
     font-size: 1.9rem;
 }
