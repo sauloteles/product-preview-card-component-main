@@ -7,12 +7,12 @@
 }
 body{
     background-color: hsl(30, 38%, 92%);
-    display: flex;
-    justify-content: center;
+
 }
 
 
 .card-main{
+    margin: auto;
     margin-top: 10%;
     display: flex;
     background-color: white;
@@ -60,6 +60,9 @@ span{
 }
 
 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     width: 100%;
     border: none;
