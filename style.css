@@ -7,86 +7,113 @@
 }
 body{
     background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
 }
 
-.conteiner-main{
+
+.card-main{
+    margin-top: 10%;
+    margin-bottom: 10%;
     display: flex;
-    width: 40%;
     background-color: white;
     max-width: 90%;
-    width: 37.5rem;
-    margin: 0 auto;
-    margin-top: 11rem;
-    margin-bottom: 10%;
-    border-radius: 15px;
+    width: 35rem;
+    border-radius: 10px;
+    
 
 }
-.img-perfume {
 
-    background-image: url(./images/image-product-desktop.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 190%;
-    border-radius: 15px 0 0 15px;
-    background-repeat: no-repeat;
+.img-item-1{
+    
+    width:50%;
+    border-radius: 10px 0 0 10px;
+}
+.img-item-2{
+    display: none;
 }
 
-.conteiner-content{
-    display: flex;
-    flex-direction: column;
-    padding: 6%;
+.card-info{
+    padding: 1rem;
  
-
 }
 
+.card-price{
 
-.conteiner-price{
+    padding-top: 2rem;
+}
+
+.card-price p{
     display: flex;
-    flex-direction: column;
-
-}
-
-.conteiner-price p{
+    align-items: center;
     color: hsl(158, 36%, 37%);
-    display: flex;
-    flex-direction: row;
-    gap: 1.6rem;
-    font-size: 2rem;
-
+    
+    padding-bottom: 2rem;
+    font-size: 25px;
+    
 }
 
-.conteiner-price p span{
-    color: hsl(228, 12%, 48%);
-    padding-top: 0.8rem;
-    font-size: 0.8rem;
+span{
+    margin-left:1rem ;
+
     text-decoration: line-through;
+    font-size: 12px;
 }
 
 button{
     cursor: pointer;
-    color: white;
-    background-color:  hsl(158, 36%, 37%);
+    width: 100%;
     border: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem;
-    justify-content: center;
-    font-weight: 700;
+    background-color:  hsl(158, 36%, 37%);
+    color: white;
+    padding: 0.8rem;
     border-radius: 10px;
+    font-weight: 700;
+    transition: all ease-in-out 0.2s;
+
 }
-p{  
-    font-family: "Montserrat";
-    color: hsl(228, 12%, 48%);
-    padding-bottom: 1.5rem;
+button img{
+    padding-right: 0.5rem;
+}
+
+h1{
+    font-family: 'Frauces';
+    padding-top: 2rem;
     
 }
-h1{
-    font-family: "Frauces";
-    padding-top: 1.5
-    rem;
-    padding-bottom: 1.5rem;
-    color: hsl(212, 21%, 14%);
-    font-size: 1.9rem;
+
+p{
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+}
+
+.text-info{
+   line-height: 1.4rem;
+   padding-top: 2rem;
+}
+
+@media (hover: hover) {
+    button:hover{
+        transition: all ease-in-out 0.2s;
+        background-color: hsl(159, 36%, 26%);
+    }
+    
+}
+
+@media screen and (max-width: 412px) {
+    .card-main{
+        display: block;
+       
+    }
+    .img-item-1{
+        display: none;
+        
+    }
+    .img-item-2{
+        display: block;
+        width:100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+ 
 }
